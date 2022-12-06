@@ -26,7 +26,7 @@ export interface MyLabelProps {
 /**
  * MyLabel UI component for user interaction
  */
-const MyLabel = ({
+export const MyLabel = ({
   label,
   size = "normal",
   allCaps = false,

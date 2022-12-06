@@ -21,3 +21,10 @@ Then it was cleaned, uninstalling react-scripts and removing files up to get the
 ```
 npx storybook init
 ```
+
+### Create dist folder
+
+Becouse this project is done with typescript, i've used `tsc` transpiler command to create dist folder and javascript transpiled files.
+Every time `tsc` command is executed, it's convenient to delete dist folder, if exists, and create a new one.
+To do this, I've used rimraf npm package and execute `rimraf dist/`
+To manage css files and to copy them into dist folder, I've used copyfiles npm package
